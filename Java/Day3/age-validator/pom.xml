@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- 
+      POM - Project Object Model 
+            - represents your entire project for maven
+            - maven uses the info in your POM to decide how to build you project
+  -->
+
+
+
+
+  <!-- Project Coordinates -->
+  <groupId>com.skillstorm</groupId>       <!-- project domian, usually a business name of some kind -->
+  <artifactId>age-validator</artifactId>  <!-- project name, no caps or spaces -->
+  <version>1.0.0</version>                <!-- major.minor.patch -->
+
+  <name>age-validator</name>              <!-- actual project name; optional -->
+  <description>Validates peoples ages </description>    <!-- a description of your project; optional -->
+
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>      <!-- change Java version to 1.8 -->
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+<!-- 
+  DEPENDENCY MANAGEMENT
+      dependencies - third party libraries that your project is using
+
+      Maven Central Repository - external repository with ALL dependencies
+
+      when maven builds your projects, it checks for dependencies
+          it will first search in .m2 for these
+          if it can't find in .m2, it downloads it from maven central
+
+-->
+
+  <dependencies>
+    <!-- JUNIT 4 -->
+    <dependency>
+        <!-- coordinates for dependency -->
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+        <scope>test</scope>
+        <!--
+          scope: compile (default), test (won't include any deployments), runtime (won't use it while compiling your project, 
+                                                                                   just lets you access the dependency while it s running)
+        -->
+    </dependency>
+  </dependencies>
+  
+</project>

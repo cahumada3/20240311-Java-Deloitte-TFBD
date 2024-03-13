@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.skillstorm.AgeValidatorTest" time="0.153" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator\target\test-classes;c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator\target\classes;C:\Users\cahumada\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cahumada\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\cahumada\AppData\Local\Temp\surefire6962807826459247281\surefirebooter-20240313131757035_3.jar C:\Users\cahumada\AppData\Local\Temp\surefire6962807826459247281 2024-03-13T13-17-55_515-jvmRun1 surefire-20240313131757035_1tmp surefire_0-20240313131757035_2tmp"/>
+    <property name="surefire.test.class.path" value="c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator\target\test-classes;c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator\target\classes;C:\Users\cahumada\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cahumada\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\cahumada"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="basedir" value="c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\cahumada\AppData\Local\Temp\surefire6962807826459247281\surefirebooter-20240313131757035_3.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="cahumada"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\cahumada\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\cahumada\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.dir" value="c:\Users\cahumada\OneDrive - SkillStorm\Java\Batch\20240311-Java-Deloitte-TFBD\Java\Day3\age-validator"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.4.1.0_x64__8wekyb3d8bbwe;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\minikube;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.3\bin;C:\Users\cahumada\AppData\Local\Microsoft\WindowsApps;C:\Users\cahumada\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cahumada\AppData\Local\Programs\oh-my-posh\bin;C:\Users\cahumada\AppData\Local\Programs\Git\cmd;C:\Users\cahumada\AppData\Roaming\Python\Python312\;C:\Users\cahumada\AppData\Roaming\Python\Python312\Scripts\;c:\users\cahumada\.local\bin;C:\Users\cahumada\.ebcli-virtual-env\executables;C:\Program Files\sfdx\bin;C:\Users\cahumada\AppData\Local\GitHubDesktop\bin;C:\Users\cahumada\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testOldEnoughToBuyAlcohol" classname="com.skillstorm.AgeValidatorTest" time="0.041">
+    <system-out><![CDATA[Caleb is old enough to purchase alcohol.
+]]></system-out>
+  </testcase>
+  <testcase name="testOldEnoughToVote" classname="com.skillstorm.AgeValidatorTest" time="0.0"/>
+  <testcase name="testOldEnoughToDrive" classname="com.skillstorm.AgeValidatorTest" time="0.01">
+    <system-out><![CDATA[Not old enough
+]]></system-out>
+  </testcase>
+</testsuite>
