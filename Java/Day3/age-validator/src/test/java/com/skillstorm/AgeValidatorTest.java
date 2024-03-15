@@ -65,7 +65,6 @@ public class AgeValidatorTest {
         person5 = new Person("Caleb", 65);
     }
 
-
     @Test
     public void testOldEnoughToDrive() {
         /*
