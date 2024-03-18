@@ -1,0 +1,23 @@
+# applications.properties/.yml
+
+# here is wher eyou can put properties your project uses 
+#        if your environment changes - your properties would stay the same 
+
+# you DONT actually need these things for your project - this is just an example of how this file works
+spring:
+    application:
+        name: hello-spring-boot     # sets the name for the project
+        admin:
+            enabled: false          # this is the defualt value - enable admin privileges for your project - only change this if you know what youre doing
+    config:
+        name: application           # this the default value - sits the name for your config file - only change this if you know what youre doing
+    output:
+        ansi:
+            enabled: ALWAYS         # lets your terminal display colors
+server:
+    port: 8282                      # sets the project port number - 8080 is default
+
+#spring.application.name=hello-spring-boot
+#spring.application.admin.enabled=false
+#spring.config.name=application
+#server.port=
