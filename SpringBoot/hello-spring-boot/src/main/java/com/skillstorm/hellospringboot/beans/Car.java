@@ -7,7 +7,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class Car implements ApplicationContextAware, BeanNameAware, InitializingBean, DisposableBean {
+public class Car implements Vehicle, ApplicationContextAware, BeanNameAware, InitializingBean, DisposableBean {
     private Engine engine;
 
     // for lifecycle
@@ -30,6 +30,11 @@ public class Car implements ApplicationContextAware, BeanNameAware, Initializing
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
+
+    @Override
+    public void drive() {
+        this.engine.run();
+    }
     
     /*
      * SPRING LIFECYCLE METHODS
@@ -37,6 +42,7 @@ public class Car implements ApplicationContextAware, BeanNameAware, Initializing
 
     /*
      * ApplicationContextAware 
+     *      - obtains a reference to the application context
      */
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -46,6 +52,7 @@ public class Car implements ApplicationContextAware, BeanNameAware, Initializing
 
     /*
      * BeanNameAware
+     *      - allows beans to be aware of their own bean name
      */
     @Override
     public void setBeanName(String name) {
