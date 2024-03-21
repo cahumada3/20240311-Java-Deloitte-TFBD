@@ -9,6 +9,16 @@
             "projectName": "spring-mvc",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringDataJpaApplication<spring-data-jpa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillstorm.springdatajpa.SpringDataJpaApplication",
+            "projectName": "spring-data-jpa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
