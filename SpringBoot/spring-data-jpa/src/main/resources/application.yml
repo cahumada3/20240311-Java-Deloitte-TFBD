@@ -1,14 +1,19 @@
 # Tell Spring where to get the data from
 spring:
     datasource:
-        url: jdbc:h2:mem:moviesdb       # name of your db - if you want to peresits data between runs you can specify a file path: jdbc:h2:file:[path]
-        username: sa                    # this is the default username for h2
-        password:                       # optional for h2
-        driverClassName: org.h2.Driver  # jdbc uses this to connect to database
+        #url: jdbc:h2:mem:moviesdb       # name of your db - if you want to peresits data between runs you can specify a file path: jdbc:h2:file:[path]
+        #username: sa                    # this is the default username for h2
+        #password:                       # optional for h2
+        #driverClassName: org.h2.Driver  # jdbc uses this to connect to database
 
-    jpa:
-        database-platform: org.hibernate.dialect.H2Dialect      # tells spring data jpa that we're using h2 database
-        defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading the data to h2
+        #postgres
+        url: jdbc:postgresql://localhost:5432/movies
+        username: postgres
+        password:                                       # entey your own password
+
+    #jpa:
+        #database-platform: org.hibernate.dialect.H2Dialect      # tells spring data jpa that we're using h2 database
+        #defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading the data to h2
 
 server:
     port: 8282     # changes port number for server
