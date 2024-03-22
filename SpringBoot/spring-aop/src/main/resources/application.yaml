@@ -9,11 +9,21 @@ spring:
         #postgres
         url: jdbc:postgresql://localhost:5432/movies
         username: postgres
-        password: ahu.21                                    # entey your own password
+        password:                                    # enter your own password
 
     #jpa:
         #database-platform: org.hibernate.dialect.H2Dialect      # tells spring data jpa that we're using h2 database
         #defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading the data to h2
 
+    output:
+        ansi:
+            enabled: ALWAYS
+
 server:
     port: 8282     # changes port number for server
+
+# sets your logging level - default INFO
+logging:
+    level:
+        com:
+            skillstorm: debug

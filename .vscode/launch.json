@@ -19,6 +19,16 @@
             "projectName": "spring-data-jpa",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringAopApplication<spring-aop>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillstorm.springaop.SpringAopApplication",
+            "projectName": "spring-aop",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
