@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Form Examples</h1>
+    </header>
+    <main>
+        <form>
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text" placeholder="Sally" name="firstName"/>
+
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text" placeholder="Sue" name="lastName"/>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email"/>
+
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="18" max="100" step="0.5"/>
+
+            <label for="password">Password:</label>
+            <input id="password" type="password"/>
+
+            <label for="date">Today's Date:</label>
+            <input id="date" type="date"/>
+
+            <input type="submit" value="submit"/>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h1>Checkboxes</h1>
+        <form>
+            <h2>What types of colors do you like?</h2>
+            <input type="checkbox" id="blueId" value="blue"/>
+            <label for="blueId">Blue</label>
+            <br/>
+            <input type="checkbox" id="redId" value="red"/>
+            <label for="redId">Red</label>
+            <br/>
+            <input type="checkbox" id="yellowId" value="yellow"/>
+            <label for="yellowId">Yellow</label>
+            <br/>
+            <input type="submit" value="submit"/>
+        </form>
+
+        <h1>Radio Buttons</h1>
+        <form>
+            <h2>What is your favorite dessert?</h2>
+            <input type="radio" value="chocolateCake" id="chocoCake" name="desserts"/>
+            <label for="chocoCake">Chocolate Cake</label>
+            <br/>
+            <input type="radio" value="cheesecake" id="cheese" name="desserts"/>
+            <label for="cheese">Cheesecake</label>
+            <br/>
+            <input type="radio" value="stroopwaffle" id="waffle" name="desserts"/>
+            <label for="waffle">Stroopwaffle</label>
+            <br/>
+            <input type="submit" value="submit"/>
+        </form>
+    </main>
+    
+</body>
+</html>

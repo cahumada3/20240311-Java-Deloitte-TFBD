@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Semantics = elements with meaning
+                    - clearly defines what content os going to be inside of the element
+                    - sections, header, article, footer, etc.    
+        non-semantic = div, span        
+    -->
+    <style>
+        .all-cities {
+            margin: 0;
+            padding: 5px;
+            background-color: pink;
+        }
+        /*Select all h1 and city class where the parent id all-cities*/
+        .all-cities > h1, .city {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .city {
+            background-color: white;
+        }
+
+        .city > h2, p {
+            margin: 4px;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Semantics</h1>
+    </header>
+    <main>
+        <!-- section = element that defines a section in a document/webpage-->
+        <section>
+            <h1>Introduction</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente accusamus 
+                soluta saepe veritatis architecto? Fugit totam dignissimos molestias, accusantium dicta 
+                sint consequuntur, sit distinctio labore repellat excepturi. Rem, ex.</p>
+        </section>
+        <!-- article = element used for self-contained content-->
+        <!-- class = selector used to describe multiple elements-->
+        <article class="all-cities">
+            <h1>Favorite Cities</h1>
+            <article class="city">
+                <h2>Atlanta</h2>
+                <p>Atlanta has crazy traffic!</p>
+            </article>
+            <article class="city"
+                <h2>Metropolis</h2>
+                <p>Where Superman resides!</p>
+            </article>
+            <article class="city">
+                <h2>Chicago</h2>
+                <p>A windy city!</p>
+            </article>
+        </article>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranformations!</title>
+    <style>
+        #container {
+            min-height: 80px;
+            border: 2px solid black;
+            margin: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            margin: 50px;
+        }
+
+        #box1 {
+            animation: myAnimation 3s ease;
+            box-shadow: 10px 5px 20px 15px blue;
+        }
+
+        #box2 {
+            animation: myAnimation 10s ease;
+           /*transform: scale(1.5, 1)*/
+        }
+
+        #box3 {
+            animation: myAnimation 3s ease;
+        }
+
+
+        @keyframes myAnimation {
+            0% {
+                transform: rotate(45deg);
+            }
+            50% {
+                transform: rotate(500deg);
+            }
+            100% {
+                transform: rotate(0deg);
+                box-shadow: 10px 10px pink;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="box" id="box1" src="https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg" alt="kitten image"/>
+        <img class="box" id="box2" src="https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg" alt="kitten image"/>
+        <img class="box" id="box3" src="https://www.petmd.com/sites/default/files/petmd-cat-happy-13.jpg" alt="kitten image"/>
+    </div>
+    
+</body>
+</html>

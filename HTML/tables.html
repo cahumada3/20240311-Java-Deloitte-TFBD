@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Tables</title>
+
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <!-- row 1-->
+            <tr>
+                <th></th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- row 2-->
+            <tr>
+                <th>Morning</th>
+                <td rowspan="2">Chores</td>
+                <td rowspan="3">Relax</td>
+            </tr>
+            <!-- row 3-->
+            <tr>
+                <th>Afternoon</th>
+            </tr>
+            <!-- row 4-->
+            <tr>
+                <th>Evening</th>
+                <td>Dinner</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
