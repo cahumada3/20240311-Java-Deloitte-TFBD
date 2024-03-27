@@ -11,9 +11,9 @@ spring:
         username: postgres
         password: ahu.21                                    # entey your own password
 
-    #jpa:
-        #database-platform: org.hibernate.dialect.H2Dialect      # tells spring data jpa that we're using h2 database
-        #defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading the data to h2
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect      # tells spring data jpa that we're using h2 database
+        defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading the data to h2
 
 server:
     port: 8282     # changes port number for server
