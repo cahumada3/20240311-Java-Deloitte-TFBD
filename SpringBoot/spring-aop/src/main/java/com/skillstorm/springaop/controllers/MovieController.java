@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.skillstorm.springaop.models.Movie;
 import com.skillstorm.springaop.services.MovieService;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/movies")
+@CrossOrigin("http://127.0.0.1:5501/")      //specified who is allowed to make requests, it defaults to allowing all requests
 public class MovieController {
 
     @Autowired

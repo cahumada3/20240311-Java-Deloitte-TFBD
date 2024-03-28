@@ -11,5 +11,6 @@
             "username": "postgres",
             "password": "ahu.21"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
