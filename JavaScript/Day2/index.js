@@ -319,7 +319,7 @@ function activateDeleteForm(movieId) {
             document.getElementById('delete-movie-title').value = m.title;
             document.getElementById('delete-movie-rating').value = m.rating;
             document.getElementById('delete-director-id').value = m.director.id;
-            document.getElementById('delete-director-first').value = m.director.first;
+            document.getElementById('delete-director-first').value = m.director.firstName;
             document.getElementById('delete-director-last').value = m.director.lastName;
         }
     }
