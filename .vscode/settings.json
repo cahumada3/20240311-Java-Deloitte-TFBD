@@ -12,5 +12,6 @@
             "password": "ahu.21"
         }
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "eslint.enable": false
 }
