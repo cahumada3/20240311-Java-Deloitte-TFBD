@@ -87,6 +87,15 @@ export default function Counter() {
 
     }, []);
 
+
+    /**
+     * UNMOUNTING COMPONENTS
+     *      - refresh the page
+     *      - close the app/shut down the server
+     *      - in the parent, un-render the component - best option
+     */
+
+
     /**
      * in jsx, we return our html 
      *      usually we wrap this html in a fragment (<></>)

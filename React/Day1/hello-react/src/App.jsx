@@ -1,11 +1,26 @@
 import Counter from "./components/ItemCounter/Counter";
+import { useState } from "react";
+import Item from "./components/ItemCounter/Item";
+import RefCounter from "./components/RefCounter/RefCounter";
 
 export default function App() {
 
+    const [shouldRender, setShouldRender] = useState(true);
 
     return (
         <>
-            <Counter/>
+            <button onClick={() => setShouldRender(!shouldRender)}>Toggle Counter</button>
+
+            {/*one line if statement - if shouldRender is true, show the componenet. else, show null*/}
+            {shouldRender ? <Counter/> : null}
+
+            {shouldRender && <Counter/>}
+
+            <Item name='Puzzle' desc='1000 pieces'>
+                <p>Child!</p>
+                {shouldRender && <RefCounter/>}
+            </Item>
+
         </>
     )
 
