@@ -23,7 +23,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/movies")
-@CrossOrigin("http://127.0.0.1:5501/")      //specified who is allowed to make requests, it defaults to allowing all requests
+//@CrossOrigin("http://127.0.0.1:5501/")      //specified who is allowed to make requests, it defaults to allowing all requests
+@CrossOrigin
 public class MovieController {
 
     @Autowired
