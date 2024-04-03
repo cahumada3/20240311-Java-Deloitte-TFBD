@@ -55,7 +55,7 @@ export default function MoviesForm({handleNewMovie}) {
                 <Label htmlFor="director-last-input">Director Last Name</Label>
                 <TextInput id="director-last-input" name="directorLast" type="text" />
 
-                <Button type="submit">Submit</Button>
+                <Button type="submit" data-close-modal='true'>Submit</Button>
             </Form>
         </>
     )

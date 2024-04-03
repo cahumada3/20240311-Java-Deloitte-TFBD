@@ -1,6 +1,6 @@
-import { GridContainer, Grid, Button} from '@trussworks/react-uswds';
+import { GridContainer, Grid, Button, Modal, ModalHeading, ModalToggleButton} from '@trussworks/react-uswds';
 import MoviesTable from '../components/MoviesTable';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import MoviesForm from '../components/MoviesForm';
 
 export default function Movies() {
@@ -9,6 +9,9 @@ export default function Movies() {
 
     //state for our list of movies
     const [movies, setMovies] = useState([]);
+
+    //creating our modal reference that trussworks needs
+    const modalRef = useRef(null);
 
     //makes this GET request when the component is mounted DOM
     useEffect(() => {
@@ -46,7 +49,7 @@ export default function Movies() {
                     </Grid>
 
                     <Grid col={2}>
-                        <Button>New Movie</Button>
+                        <ModalToggleButton modalRef={modalRef} opener>New Movie</ModalToggleButton>
                     </Grid>
 
                 </Grid>
@@ -59,9 +62,10 @@ export default function Movies() {
                 </Grid>
 
             </GridContainer>
-
-            <MoviesForm handleNewMovie={handleNewMovie}></MoviesForm>
-        
+            <Modal id='movie-form-modal' ref={modalRef}>
+                <ModalHeading id='movie-form-modal-heading'>Enter New Movie Details</ModalHeading>
+                <MoviesForm handleNewMovie={handleNewMovie}></MoviesForm>
+            </Modal>
         </>
     );
 }
