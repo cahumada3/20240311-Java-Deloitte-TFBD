@@ -40,4 +40,4 @@ export default counterSlice.reducer;
 
 
 // exporting the actions so they can be used elsewhere
-export const { increment } = counterSlice.actions;
+export const { increment, decrement, set } = counterSlice.actions;
