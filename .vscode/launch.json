@@ -29,6 +29,16 @@
             "projectName": "spring-aop",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringSecurityApplication<spring-security>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillstorm.springsecurity.SpringSecurityApplication",
+            "projectName": "spring-security",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

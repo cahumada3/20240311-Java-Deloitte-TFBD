@@ -1,0 +1,10 @@
+# Tell Spring where to get the data from
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/spring_security_users
+        username: postgres
+        password: ahu.21                                 
+
+    output:
+        ansi:
+            enabled: ALWAYS
