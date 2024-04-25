@@ -39,8 +39,8 @@ public class UserController {
 
         long count = userService.countAllUsers();   // requires admin privileges
 
-        //return "Some private data : " + principal.getName() + "; userCount: " + count;
-        return "Some private data : " + principal.getName();
+        return "Some private data : " + principal.getName() + "; userCount: " + count;
+        //return "Some private data : " + principal.getName();
     }
 
     @PostMapping("/register")
