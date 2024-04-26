@@ -21,9 +21,10 @@ public class SecurityConfig {
             .authorizeHttpRequests(authorizeHttpRequests -> {
                 // all requests coming in require authentication
                 authorizeHttpRequests.anyRequest().authenticated();
-        })
-        .csrf(csrf -> csrf.disable())  //disabling csrf ONLY for demo 
 
+        })
+        .csrf(csrf -> csrf.disable())  //disabling csrf ONLY for demo
+    
         .cors(cors -> {
             cors.configurationSource(request -> {
 
