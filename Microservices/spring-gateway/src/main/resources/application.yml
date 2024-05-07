@@ -1,0 +1,36 @@
+server:
+    port: 8125      # standard port for API Gateway
+
+# setup the eureka client for the service discovery
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka   # location of eureka server
+
+spring:
+    cloud:
+        gateway:
+            cors-configurations:
+                '[/**]':                                    # applying cors configuration to all routes
+                    allowedOrigins: http://localhost:5176   # the places that are allowed to send requests to the gateway
+                    allowedMethods:                         # list of all the allowed HTTP methods
+                        - GET                               # yml list syntax
+                        - POST
+                        - PUT
+                        - DELETE
+            # defining where to route traffic to from the gateway 
+            routes:
+                # each service is going to need its own route configuration
+                - id: accounts-service          # needs to match the spring.application.name in the services
+                  uri: lb://accounts-service    # this can be any path - we'll use spring's own load balancer to manage traffic to accounts-service
+                  predicates:                   # this path will map to this specific service
+                    - Path=/accounts/**
+
+                # each service is going to need its own route configuration
+                - id: payments-service          # needs to match the spring.application.name in the services
+                  uri: lb://payments-service    # this can be any path - we'll use spring's own load balancer to manage traffic to payments-service
+                  predicates:                   # this path will map to this specific service
+                    - Path=/payments/**
+
+
+

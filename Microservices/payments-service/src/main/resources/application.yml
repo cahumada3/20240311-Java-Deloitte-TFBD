@@ -1,0 +1,13 @@
+server:
+    port: 8082
+
+# naming the application
+spring:
+    application:
+        name: payments-service      # used as the id in the gateway routes
+
+# configure where the discovery client is so our app can auto-register itself
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
