@@ -8,7 +8,8 @@
             "mainClass": "com.skillstorm.springeurekaserver.SpringEurekaServerApplication",
             "projectName": "spring-eureka-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58838 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=spring-eureka-server"
         },
         {
             "type": "java",
@@ -18,7 +19,8 @@
             "mainClass": "com.skillstorm.springgateway.SpringGatewayApplication",
             "projectName": "spring-gateway",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58844 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=spring-gateway"
         },
         {
             "type": "java",
@@ -37,6 +39,27 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.skillstorm.accountsservice.AccountsServiceApplication",
             "projectName": "accounts-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RabbitmqPublisherApplication<rabbitmq-publisher>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillstorm.rabbitmqpublisher.RabbitmqPublisherApplication",
+            "projectName": "rabbitmq-publisher",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58967 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=rabbitmq-publisher"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RabbitmqSubscriberApplication<rabbitmq-subscriber>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillstorm.rabbitmqsubscriber.RabbitmqSubscriberApplication",
+            "projectName": "rabbitmq-subscriber",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

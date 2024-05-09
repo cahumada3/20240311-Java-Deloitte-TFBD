@@ -25,12 +25,23 @@ spring:
                   uri: lb://accounts-service    # this can be any path - we'll use spring's own load balancer to manage traffic to accounts-service
                   predicates:                   # this path will map to this specific service
                     - Path=/accounts/**
+                  filters:
+                    - name: CircuitBreaker      # needs to be exactly this - it is referencing the CircuitBreaker class from Resilience4J
+                      args:
+                        name: fallBackController    # need to be in the format of a bean
+                        # this fallback URI can be anywhere - another service entirely or stay on the gateway 
+                        fallbackUri: forward:/cache/accounts    # forwarding the request to a different endpoint
 
                 # each service is going to need its own route configuration
                 - id: payments-service          # needs to match the spring.application.name in the services
                   uri: lb://payments-service    # this can be any path - we'll use spring's own load balancer to manage traffic to payments-service
                   predicates:                   # this path will map to this specific service
                     - Path=/payments/**
+
+                - id: rabbitmq-publisher
+                  uri: lb://rabbitmq-publisher
+                  predicates:                   # this path will map to this specific service
+                    - Path=/publisher/**
 
 
 

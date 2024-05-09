@@ -1,10 +1,10 @@
 server:
-    port: 8082
+    port: 8083
 
 # naming the application
 spring:
     application:
-        name: payments-service      # used as the id in the gateway routes
+        name: rabbitmq-publisher      # used as the id in the gateway routes
 
 # configure where the discovery client is so our app can auto-register itself
 eureka:
@@ -15,3 +15,10 @@ eureka:
     # configuring how long between each "heartbeat" request
     instance:
         leaseRenewalIntervalInSeconds: 30
+
+# creating the rabbitmq fanout exchange
+exchange:
+    fanout: payment
+
+# creating the routing key for the exchange
+routing-key: key1234
